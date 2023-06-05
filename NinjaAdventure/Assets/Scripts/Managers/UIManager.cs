@@ -23,6 +23,7 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private TextMeshProUGUI vidaTMP;
     [SerializeField] private TextMeshProUGUI manaTMP;
     [SerializeField] private TextMeshProUGUI expTMP;
+    [SerializeField] private TextMeshProUGUI nivelTMP;
 
     private float vidaActual;
     private float vidaMax;
@@ -69,6 +70,7 @@ public class UIManager : Singleton<UIManager>
         manaTMP.text = $"{manaActual}/{manaMax}";
         // expTMP.text = $"{((expActual/expRequeridaNuevoNivel)*100):F2}%";
         expTMP.text = $"{expActual}/{expRequeridaNuevoNivel}";
+        nivelTMP.text = $"Nivel {stats.Nivel}";
         
 
     }
@@ -79,11 +81,12 @@ public class UIManager : Singleton<UIManager>
         
         statDañoTMP.text = stats.Daño.ToString();
         statDefensaTMP.text = stats.Defensa.ToString();
-        statBloqueoTMP.text = "{stats.PorcentajeBloqueo}%";
-        statCriticoTMP.text = "{stats.PorcentajeCritico}%";
+        statBloqueoTMP.text = $"{stats.PorcentajeBloqueo}%";
+        statCriticoTMP.text = $"{stats.PorcentajeCritico}%";
         statVelocidadTMP.text = stats.Velocidad.ToString();
         statNivelTMP.text = stats.Nivel.ToString();
-        statExpTMP.text = stats.ExpActual.ToString();
+        statExpTMP.text = expActual.ToString();
+        // statExpTMP.text = stats.ExpActual.ToString();
         statExpRequeridaTMP.text = stats.ExpRequerida.ToString();
 
     }
