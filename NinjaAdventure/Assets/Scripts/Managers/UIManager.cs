@@ -7,6 +7,7 @@ public class UIManager : Singleton<UIManager>
     [Header("Stats")]
     [SerializeField] private PersonajeStats stats;
 
+
     [Header("Paneles")]
     [SerializeField] private GameObject panelStats;
 
@@ -41,6 +42,10 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private TextMeshProUGUI statNivelTMP;
     [SerializeField] private TextMeshProUGUI statExpTMP;
     [SerializeField] private TextMeshProUGUI statExpRequeridaTMP;
+    [SerializeField] private TextMeshProUGUI atributoFuerzaTMP;
+    [SerializeField] private TextMeshProUGUI atributoDestrezaTMP;
+    [SerializeField] private TextMeshProUGUI atributoInteligenciaTMP;
+    [SerializeField] private TextMeshProUGUI atributoDisponiblesTMP;
     
     
 
@@ -88,6 +93,11 @@ public class UIManager : Singleton<UIManager>
         statExpTMP.text = expActual.ToString();
         // statExpTMP.text = stats.ExpActual.ToString();
         statExpRequeridaTMP.text = stats.ExpRequerida.ToString();
+        
+        atributoFuerzaTMP.text = stats.Fuerza.ToString();
+        atributoDestrezaTMP.text = stats.Destreza.ToString();
+        atributoInteligenciaTMP.text = stats.Inteligencia.ToString();
+        atributoDisponiblesTMP.text = $"Puntos: {stats.PuntosDisponibles}";
 
     }
     public void ActualizarVidaPersonaje(float pVidaActual, float pVidaMax)

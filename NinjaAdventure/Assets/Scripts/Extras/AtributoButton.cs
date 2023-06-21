@@ -14,8 +14,7 @@ public class AtributoButton : MonoBehaviour
 {
     public static Action<TipoAtributo> EventoAgregarAtributo;
 
-    [SerializeField]
-    private TipoAtributo tipo;
+    [SerializeField] private TipoAtributo tipo;
 
     public void AgregarAtributo()
     {

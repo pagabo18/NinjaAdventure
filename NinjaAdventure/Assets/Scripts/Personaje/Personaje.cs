@@ -42,6 +42,7 @@ public class Personaje : MonoBehaviour
                 break;
             
         }
+        stats.PuntosDisponibles -=1;
     }
 
     private void OnEnable() {

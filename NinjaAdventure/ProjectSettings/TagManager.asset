@@ -41,3 +41,21 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Piso
+    uniqueID: 1198491077
+    locked: 0
+  - name: Tile_arboles
+    uniqueID: 3991583519
+    locked: 0
+  - name: Tile_Casas
+    uniqueID: 3322321569
+    locked: 0
+  - name: Tile_props
+    uniqueID: 3542827763
+    locked: 0
+  - name: Personaje
+    uniqueID: 2319197285
+    locked: 0
+  - name: arriba
+    uniqueID: 2078800909
+    locked: 0
